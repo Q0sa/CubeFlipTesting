@@ -1,0 +1,34 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "CubeFlip",
+            "id": "ad743003-8a10-4341-bc7c-d06965382168",
+            "actions": [
+                {
+                    "name": "Flip",
+                    "type": "Button",
+                    "id": "8d37e3b8-0acb-46cf-bc0b-2f8c8a65b4e9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a9f6a3f4-3e4c-4c66-be86-85da04b3cb19",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Flip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
