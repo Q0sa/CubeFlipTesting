@@ -92,9 +92,11 @@ public class CubeHitCurve : MonoBehaviour
     {
         step += Time.fixedDeltaTime * rotationStages[currentStage].speed;
     }
+
     private void ApplyRotationStageTorque(Vector3 direction, float torqueForce)
     {
         rb.AddTorque(direction * torqueForce, ForceMode.Impulse);
+        step = 0f;
     }
 
     private void NextStage(InputAction.CallbackContext context)
