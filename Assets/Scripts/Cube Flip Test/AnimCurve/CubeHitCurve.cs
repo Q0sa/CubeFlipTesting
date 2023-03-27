@@ -54,7 +54,7 @@ public class CubeHitCurve : MonoBehaviour
 
         spaceHit = playerInput.CubeFlip.Flip;
         spaceHit.Enable();
-        spaceHit.performed += NextStage;
+        spaceHit.performed += StartNextRotationStage;
 
     }
 
@@ -66,40 +66,37 @@ public class CubeHitCurve : MonoBehaviour
     private void Update()
     {
 
-        CubeRotation();
-
-    }
-
-    private void CubeRotation()
-    {
-        
-        if (transform.rotation != targetRotation) {
-
-            transform.rotation = Quaternion.RotateTowards(startRotation, targetRotation, step);
+        if (!hasReachedTargetRotation())
             UpdateRotateStep();
-
-        } else if (!impulseAdded) {
-
-            ApplyRotationStageTorque(rotationStages[currentStage].impulseDirection.normalized, rotationStages[currentStage].impulseForce);
-            impulseAdded = true;
-
-        }
-
-
+        else if (!impulseAdded)
+            EndOfRotationManager();
+        
     }
-
-    private void UpdateRotateStep()
+    
+    private void FixedUpdate()
     {
-        step += Time.fixedDeltaTime * rotationStages[currentStage].speed;
+        if (!hasReachedTargetRotation())
+            CubeRotationTowards();
+
     }
 
-    private void ApplyRotationStageTorque(Vector3 direction, float torqueForce)
+    private bool hasReachedTargetRotation() { return transform.rotation == targetRotation; } 
+
+    private void CubeRotationTowards(){ transform.rotation = Quaternion.RotateTowards(startRotation, targetRotation, step); }
+
+    private void UpdateRotateStep() { step += Time.fixedDeltaTime * rotationStages[currentStage].speed; }
+
+    private void EndOfRotationManager()
     {
-        rb.AddTorque(direction * torqueForce, ForceMode.Impulse);
-        step = 0f;
+
+        ApplyRotationStageTorque(rotationStages[currentStage].impulseDirection.normalized, rotationStages[currentStage].impulseForce);
+        impulseAdded = true;
+
     }
 
-    private void NextStage(InputAction.CallbackContext context)
+    private void ApplyRotationStageTorque(Vector3 direction, float torqueForce) { rb.AddTorque(direction * torqueForce, ForceMode.Impulse); }
+
+    private void StartNextRotationStage(InputAction.CallbackContext context)
     {
 
         startRotation = targetRotation;
@@ -111,4 +108,6 @@ public class CubeHitCurve : MonoBehaviour
         impulseAdded = false;
 
     }
+
+  
 }

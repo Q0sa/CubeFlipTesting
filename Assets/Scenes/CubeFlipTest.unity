@@ -1780,10 +1780,6 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: -4418858749660053874, guid: da5dfed8689930d4c9c0f7906a28720f, type: 3}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -2738954116144128297, guid: da5dfed8689930d4c9c0f7906a28720f, type: 3}
       propertyPath: speed
       value: 400
@@ -1822,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2738954116144128297, guid: da5dfed8689930d4c9c0f7906a28720f, type: 3}
       propertyPath: rotationStages.Array.data[0].speed
-      value: 60
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: -2738954116144128297, guid: da5dfed8689930d4c9c0f7906a28720f, type: 3}
       propertyPath: rotationStages.Array.data[1].speed
@@ -1830,7 +1826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2738954116144128297, guid: da5dfed8689930d4c9c0f7906a28720f, type: 3}
       propertyPath: rotationStages.Array.data[2].speed
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: -2738954116144128297, guid: da5dfed8689930d4c9c0f7906a28720f, type: 3}
       propertyPath: curve.m_Curve.Array.data[0].inSlope
