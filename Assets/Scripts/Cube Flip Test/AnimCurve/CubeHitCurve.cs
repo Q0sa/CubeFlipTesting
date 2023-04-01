@@ -61,6 +61,7 @@ public class CubeHitCurve : MonoBehaviour
     private void OnDisable()
     {
         spaceHit.Disable();
+        spaceHit.performed -= StartNextRotationStage;
     }
 
     private void Update()
@@ -69,7 +70,7 @@ public class CubeHitCurve : MonoBehaviour
         if (!hasReachedTargetRotation())
             UpdateRotateStep();
         else if (!impulseAdded)
-            EndOfRotationManager();
+            EndOfRotationSequence();
         
     }
     
@@ -86,7 +87,7 @@ public class CubeHitCurve : MonoBehaviour
 
     private void UpdateRotateStep() { step += Time.fixedDeltaTime * rotationStages[currentStage].speed; }
 
-    private void EndOfRotationManager()
+    private void EndOfRotationSequence()
     {
 
         ApplyRotationStageTorque(rotationStages[currentStage].impulseDirection.normalized, rotationStages[currentStage].impulseForce);
