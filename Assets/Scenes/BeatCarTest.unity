@@ -327,7 +327,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363486342}
-  m_LocalRotation: {x: 0.07259109, y: -0.00000003764676, z: 0.0000000027400475, w: 0.99736184}
+  m_LocalRotation: {x: 0.07259109, y: 0.000000037646767, z: -0.0000000027400482, w: 0.99736184}
   m_LocalPosition: {x: 26.361603, y: -858.178, z: 983.133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -707,7 +707,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139323700}
-  m_LocalRotation: {x: 0.023789268, y: 0.0000000036343217, z: -8.648235e-11, w: 0.999717}
+  m_LocalRotation: {x: 0.023789274, y: 0.0000000058155907, z: -1.3838784e-10, w: 0.999717}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1182,7 +1182,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939837310}
-  m_LocalRotation: {x: 0.07259109, y: -0.000000017689135, z: 0.0000000012874702, w: 0.99736184}
+  m_LocalRotation: {x: 0.07259109, y: 0.000000017689146, z: -0.000000001287471, w: 0.99736184}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1265,7 +1265,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967357723}
-  m_LocalRotation: {x: 0.122183256, y: 0.000000004269366, z: -5.2558286e-10, w: 0.9925076}
+  m_LocalRotation: {x: 0.122183256, y: -0.000000004269366, z: 5.2558286e-10, w: 0.9925076}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1370,9 +1370,13 @@ PrefabInstance:
       propertyPath: activeFreeLook
       value: 
       objectReference: {fileID: 1537727715}
+    - target: {fileID: 7324939306982574786, guid: dd2853b99b7e6fe4a93cc9195997f112, type: 3}
+      propertyPath: turnSpeed
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 8480601569722552248, guid: dd2853b99b7e6fe4a93cc9195997f112, type: 3}
       propertyPath: m_Constraints
-      value: 112
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 8480601569722552248, guid: dd2853b99b7e6fe4a93cc9195997f112, type: 3}
       propertyPath: m_Interpolate
