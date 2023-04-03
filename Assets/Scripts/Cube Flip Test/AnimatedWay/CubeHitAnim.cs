@@ -31,6 +31,8 @@ public class CubeHitAnim : MonoBehaviour
     private void OnDisable()
     {
         spaceHit.Disable();
+        spaceHit.performed -= TriggerNextAnim;
+
     }
 
     private void Update()

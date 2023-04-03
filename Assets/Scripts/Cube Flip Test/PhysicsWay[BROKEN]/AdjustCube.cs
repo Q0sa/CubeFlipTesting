@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//=====
+// OBS THIS CODE IS NON FUNCTIONAL OR HAS BEEN ABANDONED
+//=====
 public class AdjustCube : MonoBehaviour
 {
 
 
-    [SerializeField] float stabalisationSpeed = 1.0f;
+    //[SerializeField] float stabalisationSpeed = 1.0f;
 
     private Transform[] cubeFaceTransf;
     private Transform camTransf;

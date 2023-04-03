@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//=====
+// OBS THIS CODE IS NON FUNCTIONAL OR HAS BEEN ABANDONED
+//=====
+
 public class JuicySpace : MonoBehaviour
 {
 
+
+
     [SerializeField] private float UpRotationForce = 1f;
-    [SerializeField] private float DownRotationForce = 1f;
-    [SerializeField] private float LeftRotationForce = 1f;
-    [SerializeField] private float RightRotationForce = 1f;
+    //[SerializeField] private float DownRotationForce = 1f;
+    //[SerializeField] private float LeftRotationForce = 1f;
+    //[SerializeField] private float RightRotationForce = 1f;
 
     Rigidbody rb;
 
