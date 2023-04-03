@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 5587423740108282447}
   - component: {fileID: 7324939306982574786}
   m_Layer: 0
-  m_Name: Car
+  m_Name: CAR v1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,3 +211,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeed: 2
+  accelSpeed: 10

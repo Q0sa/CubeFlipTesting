@@ -32,7 +32,7 @@ public class FreeLookSettings : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.Locked;
      
-        activeFreeLook.m_Lens.FieldOfView = 90f;
+        activeFreeLook.m_Lens.FieldOfView = FOV;
         activeFreeLook.m_Orbits[0].m_Radius = CameraDistance;
         activeFreeLook.m_Orbits[1].m_Radius = CameraDistance;
         activeFreeLook.m_Orbits[2].m_Radius = CameraDistance;
